@@ -7,16 +7,11 @@ layout {
       }
   }
 
-  pane_template split_direction="horizontal" borderless=true {
-    children
-  }
-
   tab name="editor" focus=true {
     pane command="nvim" focus=true close_on_exit=true
   }
 
   tab name="cli" {
-    pane
     pane
   }
 }
