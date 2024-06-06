@@ -1,10 +1,9 @@
-// #6272a4
-// #f8f8f2
 layout {
   default_tab_template {
     children
     pane size=1 borderless=true {
-      plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
+      // plugin location="zellij:compact-bar"
+      plugin location="zjstatus" {
         format_left   "{mode} #[fg=cyan,bold] {session} {command_git_branch}"
         format_center "{tabs}"
         format_right  "{datetime}"
@@ -39,7 +38,8 @@ layout {
     pane command="nvim" focus=true
   }
 
-  tab name="cli" split_direction="vertical" {
+  tab name="cli" split_direction="horizontal" {
+    pane
     pane
   }
 }
