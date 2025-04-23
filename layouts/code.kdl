@@ -11,23 +11,23 @@ layout {
 
         border_enabled  "true"
         border_char     "─"
-        border_format   "#[fg=#6272a4{char}"
+        border_format   "#[fg=blue{char}"
         border_position "top"
 
         hide_frame_for_single_pane "false"
 
-        mode_normal  "#[bg=blue,bold] {name} "
-        mode_tmux    "#[bg=#FFB86C,bold] {name} "
+        mode_normal  "#[fg=black,bg=blue,bold] {name} "
+        mode_tmux    "#[bg=orange,bold] {name} "
 
-        tab_normal   "#[fg=#f8f8f2,bg=#44475a,italic] {name} "
-        tab_active   "#[fg=#f8f8f2,bg=#6272a4,bold] {name} "
+        tab_normal   "#[fg=white,bg=black,italic] {name} "
+        tab_active   "#[fg=black,bg=magenta,bold] {name} "
 
         command_git_branch_command     "git rev-parse --abbrev-ref HEAD"
         command_git_branch_format      "#[fg=magenta]  {stdout} "
         command_git_branch_interval    "10"
         command_git_branch_rendermode  "static"
 
-        datetime        "#[fg=fg,bg=#6272a4,bold] {format} "
+        datetime        "#[fg=black,bg=red,bold] {format} "
         datetime_format "%A, %d %b %Y %I:%M %p"
         datetime_timezone "America/Mexico_City"
       }

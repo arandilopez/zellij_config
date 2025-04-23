@@ -199,7 +199,6 @@ plugins {
     filepicker location="zellij:strider" {
         cwd "/"
     }
-    // zjstatus location="file:~/.config/zellij/plugins/zjstatus.wasm"
     zjstatus location="https://github.com/dj95/zjstatus/releases/latest/download/zjstatus.wasm"
 }
 
@@ -268,7 +267,7 @@ pane_frames false
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-theme "dracula"
+theme "catppuccin-frappe"
 
 // The name of the default layout to load on startup
 // Default: "default"
